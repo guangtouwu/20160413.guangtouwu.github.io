@@ -35,17 +35,17 @@
 <p>环境：linux(centos)操作系统，nginx，php-fpm，MySQL，memcache,sphnix</p>
 
 <h4>1 nginx:编译安装</h4>
-<br /><p>附上一个安装链接：<a href="http://www.linuxidc.com/Linux/2015-03/114988.htm">http://www.linuxidc.com/Linux/2015-03/114988.htm</a></p>
+<p><br />附上一个安装链接：<a href="http://www.linuxidc.com/Linux/2015-03/114988.htm">http://www.linuxidc.com/Linux/2015-03/114988.htm</a></p>
 
-<h4>2 php-fpm:编译安装，编译的时候要选好需要支持的扩展，或者安装后修改配置文件开启扩展<h4>
-<p><br />附上一个安装链接：<a href="http://crizy.iteye.com/blog/1162372">http://crizy.iteye.com/blog/1162372</a>
+<h4>2 php-fpm:</h4>
+<p><br />编译安装，编译的时候要选好需要支持的扩展，或者安装后修改配置文件开启扩展
+<br />附上一个安装链接：<a href="http://crizy.iteye.com/blog/1162372">http://crizy.iteye.com/blog/1162372</a>
 <br />安装php-fpm过程中问题解决汇总：
-<a href="http://blog.sina.com.cn/s/blog_702bd5360101f8uc.html">http://blog.sina.com.cn/s/blog_702bd5360101f8uc.html</a></p>
+<br /><a href="http://blog.sina.com.cn/s/blog_702bd5360101f8uc.html">http://blog.sina.com.cn/s/blog_702bd5360101f8uc.html</a></p>
 
 <h4>3 memcache:</h4>
-<p>是nosql的一种，是一个高性能的分布式的内存对象缓存系统，通过在内存里维护一个统一的巨大的hash表，它能够用来存储各种格式的数据，包括图像、视频、文件以及数据库检索的结果等。简单的说就是将数据调用到内存中，然后从内存中读取，从而大大提高读取速度。
-<br/>注：
-<br />memcache存储大小受内存大小限制，只要内容足够大，就可以不断增加item;
+<p><br />是nosql的一种，是一个高性能的分布式的内存对象缓存系统，通过在内存里维护一个统一的巨大的hash表，它能够用来存储各种格式的数据，包括图像、视频、文件以及数据库检索的结果等。简单的说就是将数据调用到内存中，然后从内存中读取，从而大大提高读取速度。
+<br /><br />注：memcache存储大小受内存大小限制，只要内容足够大，就可以不断增加item;
 <br />过期时间最大为30天，即使永久存储也是最大30天
 <br />单个item最大内容为1M,超过不予存储
 <br />另外：不支持所有键的检索，不过这是为了提高性能，与redis不同。后面我们再讨论memcache与redis的区别</p>
